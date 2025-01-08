@@ -1,0 +1,10 @@
+services:
+  gtts-client:
+    container_name: gtts-client
+    image: gtts-client
+    ports:
+      - 6000:6000
+    volumes:
+      - /Users/hyun/Projects/wordApp/tmp:/usr/src/app/data/sound
+    environment:
+      TZ: Asia/Seoul
